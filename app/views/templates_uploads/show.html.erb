@@ -2,7 +2,7 @@
   <div class="h-screen">
     <div class="text-center p-8 h-full flex items-center justify-center">
       <div>
-        <%= render 'shared/logo', width: 50, height: 50, class: 'mx-auto animate-bounce' %>
+        <%= render 'shared/logo', height: 50, class: 'mx-auto animate-bounce' %>
         <span>
           <%= t('processing') %>...
         </span>
@@ -22,7 +22,7 @@
       <div class="text-center p-8 h-full flex items-center justify-center">
         <div class="space-y-4">
           <div data-target="confirm-upload.logo" class="mx-auto">
-            <%= render 'shared/logo', width: 50, height: 50, class: 'mx-auto' %>
+            <%= render 'shared/logo', height: 50, class: 'mx-auto' %>
           </div>
           <div data-target="confirm-upload.processing" class="hidden">
             <span><%= t('processing') %>...</span>

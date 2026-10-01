@@ -1,0 +1,27 @@
+# Textos de correo y firma en español de Colombia (trato de "usted").
+# Se carga después de i18n.yml y sobrescribe solo las claves indicadas para es-ES.
+es-ES:
+  hello_name: Estimado(a) %{name}
+  hi_there: Cordial saludo
+  thanks: Atentamente
+  you_have_been_invited_to_sign_the_name: 'ParqueSoft Nariño le ha enviado el documento "%{name}" para su firma.'
+  you_have_been_invited_to_submit_the_name_form: 'ParqueSoft Nariño le ha enviado el formulario "%{name}" para que lo diligencie.'
+  you_have_been_invited_to_view_the_name: 'ParqueSoft Nariño le ha compartido el documento "%{name}" para su consulta.'
+  review_and_sign: Revisar y firmar
+  review_and_submit: Revisar y diligenciar
+  please_contact_us_by_replying_to_this_email_if_you_have_any_questions: Si tiene alguna inquietud, con gusto le ayudamos; responda a este correo.
+  you_requested_to_reset_your_password_use_the_link_below_to_continue: Recibimos una solicitud para restablecer su contraseña. Use el botón de abajo para crear una nueva.
+  your_password_wont_change_until_you_open_the_link_above_and_set_a_new_one: Su contraseña no cambiará hasta que abra el enlace y defina una nueva.
+  if_you_didnt_request_this_you_can_ignore_this_email: Si usted no hizo esta solicitud, puede ignorar este mensaje.
+  you_have_been_invited_to_account_name_product_name_please_sign_up_using_the_link_below_: 'Lo(a) han invitado a unirse a %{account_name} en %{product_name}. Cree su usuario con el botón de abajo.'
+  name_has_been_completed_by_submitters: 'El documento "%{name}" fue firmado por %{submitters}.'
+  alternatively_you_can_review_and_download_your_copy_using_the_link_below: "También puede revisar y descargar su copia con el siguiente enlace:"
+  please_check_the_copy_of_your_name_in_the_email_attachments: 'Adjuntamos a este correo una copia de "%{name}" para sus archivos.'
+  name_declined_by_submitter_with_the_following_reason: 'El documento "%{name}" fue rechazado por %{submitter} por el siguiente motivo:'
+  please_reply_to_this_email_if_you_didnt_request_this: Si usted no hizo esta solicitud, responda a este correo.
+  your_verification_code_to_access_the_name: 'Su código de verificación para acceder a "%{name}" es:'
+  sent_using_product_name_open_source_software_html: 'Desarrollado por <a href="%{product_url}">%{product_name}</a>, software de código abierto.'
+  sent_using_product_name_free_document_signing_html: 'Desarrollado por <a href="%{product_url}">%{product_name}</a>, software de código abierto.'
+  sent_using_product_name_in_testing_mode_html: 'Desarrollado por <a href="%{product_url}">%{product_name}</a> · Modo de prueba.'
+  sign_in: Ingresar
+  signing_in: Ingresando...
