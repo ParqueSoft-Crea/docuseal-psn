@@ -15,6 +15,20 @@ module ActionMailerConfigsInterceptor
       return message
     end
 
+    if ENV['MAILEROO_API_KEY'].present?
+      message.delivery_method(:maileroo, api_key: ENV.fetch('MAILEROO_API_KEY'))
+
+      from = ENV.fetch('MAILEROO_FROM').to_s.split(',').sample
+
+      if from.match?(User::FULL_EMAIL_REGEXP)
+        message[:from] = message[:from].to_s.sub(User::EMAIL_REGEXP, from)
+      else
+        message.from = from
+      end
+
+      return message
+    end
+
     if Rails.env.production? && Rails.application.config.action_mailer.delivery_method
       from = ENV.fetch('SMTP_FROM').to_s.split(',').sample
 

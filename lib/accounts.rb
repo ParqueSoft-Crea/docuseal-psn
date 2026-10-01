@@ -176,7 +176,7 @@ module Accounts
   def can_send_emails?(_account, **_params)
     return true if Docuseal.multitenant?
     return true if Rails.env.development?
-    return true if ENV['SMTP_ADDRESS'].present?
+    return true if ENV['SMTP_ADDRESS'].present? || ENV['MAILEROO_API_KEY'].present?
 
     EncryptedConfig.exists?(key: EncryptedConfig::EMAIL_SMTP_KEY)
   end

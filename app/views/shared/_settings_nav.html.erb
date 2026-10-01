@@ -32,7 +32,7 @@
         <li>
           <%= link_to t('account'), settings_account_path, class: 'text-base hover:bg-base-300', data: nav_link_data %>
         </li>
-        <% if (!Docuseal.multitenant? || EncryptedConfig.exists?(key: EncryptedConfig::EMAIL_SMTP_KEY, account: current_account)) && can?(:read, EncryptedConfig.new(key: EncryptedConfig::EMAIL_SMTP_KEY, account: current_account)) && ENV['SMTP_ADDRESS'].blank? && true_user == current_user %>
+        <% if (!Docuseal.multitenant? || EncryptedConfig.exists?(key: EncryptedConfig::EMAIL_SMTP_KEY, account: current_account)) && can?(:read, EncryptedConfig.new(key: EncryptedConfig::EMAIL_SMTP_KEY, account: current_account)) && ENV['SMTP_ADDRESS'].blank? && ENV['MAILEROO_API_KEY'].blank? && true_user == current_user %>
           <li>
             <%= link_to t('email'), settings_email_index_path, class: 'text-base hover:bg-base-300', data: nav_link_data %>
           </li>
